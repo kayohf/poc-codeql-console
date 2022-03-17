@@ -1,0 +1,4 @@
+name: poc-codeql-console/codeql-custom-queries
+version: 0.0.0
+dependencies:
+  codeql/csharp-all: "*"
