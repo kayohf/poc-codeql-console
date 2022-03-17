@@ -10,12 +10,6 @@
 # supported CodeQL languages.
 #
 name: "CodeQL"
-
-disable-default-queries: true
-
-queries:
-  - name: Use an in-repository QL pack (run queries in the custom-queries directory)
-    uses: ./custom-queries
     
 on:
   pull_request:
@@ -47,6 +41,7 @@ jobs:
       uses: github/codeql-action/init@v1
       with:
         languages: ${{ matrix.language }}
+        config-file: ./.github/workflows/codeql-config.yml
         # If you wish to specify custom queries, you can do so here or in a config file.
         # By default, queries listed here will override any specified in a config file.
         # Prefix the list here with "+" to use these queries and those in the config file.
