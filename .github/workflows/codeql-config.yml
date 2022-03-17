@@ -1,9 +1,0 @@
-name: "My Custom Config"
-
-disable-default-queries: true
-
-languages: csharp
-
-queries:
-  - name: Use an in-repository QL pack (run queries in the custom-queries directory)
-    uses: ./custom-queries
