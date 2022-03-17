@@ -5,3 +5,6 @@ disable-default-queries: true
 queries:
   - name: Use an in-repository QL pack (run queries in the custom-queries directory)
     uses: ./custom-queries
+
+paths:
+  - poc-codeql-console 
